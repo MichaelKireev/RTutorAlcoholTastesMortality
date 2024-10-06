@@ -87,7 +87,7 @@ Appendix
 
 ## How to solve this problem set
 
-This problem set mostly contains code chunks for programming tasks, but some tasks also contain quizzes. Whenever **Task** is displayed, a code chunk must be solved or is already given and needs to be executed. Sometimes code chunks have to be solved entirely, and sometimes only certain parts of them, indicated by `___`.
+This problem set mostly contains code chunks for programming tasks, but some tasks also contain quizzes. Whenever **Task** is displayed, a code chunk must be solved or is already given and needs to be executed. Sometimes code chunks must be solved entirely, and sometimes only certain parts of them, indicated by `___`.
 
 Whenever a code chunk is available, the following buttons are at the top:
 
@@ -110,13 +110,13 @@ Have fun solving the problem set!
 
 ## Exercise 1 -- Anti-alcohol campaign
 
-Mikhail Gorbachev, former General Secretary of the Communist Party of the Soviet Union (CPSU), launched an anti-alcohol campaign on June 1, 1985 to combat the rampant alcohol consumption in the Soviet Union. According to Shkolnikov & Nemtsov (1997), the campaign was primitive and unrealistic. It restricted access to alcohol, but did not address the causes of alcohol abuse. As a result, the effect of the campaign did not last long.
+Mikhail Gorbachev, former General Secretary of the Communist Party of the Soviet Union (CPSU), launched an anti-alcohol campaign on June 1, 1985, to combat the rampant alcohol consumption in the Soviet Union. According to Shkolnikov & Nemtsov (1997), the campaign was primitive and unrealistic. It restricted access to alcohol but did not address the causes of alcohol abuse. As a result, the effect of the campaign did not last long.
 
 This campaign, which officially lasted from 1985 to 1988, consisted of multiple broad measures aimed at reducing alcohol supply and consumption. 
 
 Between 1984 and 1987, the number of stores selling wine and vodka in Russia was reduced by 5 times. In addition, eight breweries were closed and the agricultural area for wine grapes was reduced by about 30 percent (Shkolnikov & Nemtsov, 1997).
 
-Drinking alcohol was banned of all workplaces, including previously legal bars in educational institutions. Alcohol sales were restricted to off-licences and were not allowed before 2 p.m.. Sales on trains (including dining cars) and similar establishments, were also prohibited. 
+Drinking alcohol was banned of all workplaces, including previously legal bars in educational institutions. Alcohol sales were restricted to off-licences and were not allowed before 2 p.m. Sales on trains (including dining cars) and similar establishments, were also prohibited. 
 In August 1985, prices rose by 25%, followed by a further increase in August 1986. This was accompanied by a series of measures aimed at restricting access, including production cuts that led to significant shortages. The impact of these changes was immediately visible, as evidenced by long queues at official alcohol outlets, with up to 3,000 people in one instance in Moscow (McKee, 1999).
 
 </br></br>
@@ -137,11 +137,11 @@ The data from the paper are divided into 3 categories based on different sources
 
 ### National-level data
 
-The national-level data on alcohol sales going back to 1970 comes from the Federal State Statistics Service (FSSS or Rosstat) and its predecessor Goskomstat. The authors compiled these data manually from various statistical yearbooks in printed and electronic form. The official statistics on alcohol sales are expressed by types (vokda, beer, wine, ...) in million decaliters. The authors converted these data into liters of pure alcohol per capita by dividing the total sales by the population. For the individual-level estimates of the effect of shocks on taste formation, these national-level data are not used.
+The national-level data on alcohol sales going back to 1970 comes from the Federal State Statistics Service (FSSS or Rosstat) and its predecessor Goskomstat. The authors compiled these data manually from various statistical yearbooks in printed and electronic form. The official statistics on alcohol sales are expressed by types (vodka, beer, wine, ...) in million decaliters. The authors converted these data into liters of pure alcohol per capita by dividing the total sales by the population. For the individual-level estimates of the effect of shocks on taste formation, these national-level data are not used.
 
 ### Regional-level data
 
-Regional-level data were obtained from historical data provided by Bhattacharya, Gathmann, and Miller (2013) on the share of illegal vodka in total alcohol consumption across Russian regions before and during the anti-alcohol campaign. Furthermore the authors used more recent regional-data from the FSSS on alcohol sales by type of alcohol. In addition, they use new epidemiological data from the Center for Demographic Research at the New Economic School on mortality rates by year, gender, age, region, and type of settlement (rural/urban).
+Regional-level data were obtained from historical data provided by Bhattacharya, Gathmann, and Miller (2013) on the share of illegal vodka in total alcohol consumption across Russian regions before and during the anti-alcohol campaign. Furthermore, the authors used more recent regional-data from the FSSS on alcohol sales by type of alcohol. In addition, they use new epidemiological data from the Center for Demographic Research at the New Economic School on mortality rates by year, gender, age, region, and type of settlement (rural/urban).
 <!-- Link der Autoren nicht mehr aufrufbar!
 Center for Demographic Research at the New Economic School. 1989–2014. “Mortality Rates by Age and Sex.” Russian Fertility and Mortality Database. http://demogr.nes.ru/index.php/en/%20
 demogr_indicat (accessed June 17, 2017). -->
@@ -160,7 +160,7 @@ info("RLMS")
 
 Let's take a look at this data and load it into R. The data is stored in Stata format (.dta) and can be read using the `read_dta()` function from the `haven` package.
 
-**Task:** Complete the code in the chunk below by replacing `___`. Results are stored in a new data frame called `data_males`. A hint on how to solve this task can be obtained by clicking the *hint*-button. Hit *check* to execute the code once you are done. If you cannot or do not want to solve the task yourself click *solution* and *check* afterwards.
+**Task:** Complete the code in the chunk below by replacing `___`. Results are stored in a new data frame called `data_males`. A hint on how to solve this task can be obtained by clicking the *hint*-button. Hit *check* to execute the code once you are done. If you cannot or do not want to solve the task yourself, click *solution* and *check* afterwards.
 
 ```{r "3_1"}
 #Load library
@@ -181,7 +181,7 @@ We restrict the sample to individuals aged 18 and older, with 18 being the minim
 
 In this chapter, we will focus on descriptive statistics to gain a better understanding of our data sets. 
 
-In the first section, we will look at the descriptive statistics of the Russian Longitudinal Monitoring Survey (RLMS) participants.  We will also look at a summary for men and women in order to identify gender differences.
+In the first section, we will look at the descriptive statistics of the Russian Longitudinal Monitoring Survey (RLMS) participants.  We will also look at a summary for men and women to identify gender differences.
 
 In the second section, we will analyze the effects of the anti-alcohol campaign on the consumption of vodka and beer. In addition, we will look at the consumption of illegally produced alcohol to understand the impact of the campaign.
 
@@ -212,7 +212,7 @@ For this and further chunks we use `dplyr` to manipulate the data.
 info("dplyr")
 ```
 
-**Task:** Complete the code in the chunk below by replacing `___`. A hint on how to solve this task can be obtained by clicking the *hint*-button. Hit *check* to execute the code once you are done. If you cannot or do not want to solve the task yourself click *solution* and *check* afterwards.
+**Task:** Complete the code in the chunk below by replacing `___`. A hint on how to solve this task can be obtained by clicking the *hint*-button. Hit *check* to execute the code once you are done. If you cannot or do not want to solve the task yourself, click *solution* and *check* afterwards.
 
 ```{r "5_1"}
 library(dplyr)
@@ -255,7 +255,7 @@ summary_males <- data_males_alc %>%
   select(share_beer, share_beer_home, share_vodka, share_samogon, share_wine, share_other) %>%
   pivot_longer(share_beer:share_other, names_to = "Variable", values_to = "Value") %>%
   group_by(Variable) %>%
-  summarize(Observations = sum(!is.na(Value)),
+  summarise(Observations = sum(!is.na(Value)),
             Mean = round(mean(Value, na.rm = TRUE), 1),
             SD = round(sd(Value, na.rm = TRUE), 1),
             p25 = round(quantile(Value, probs = 0.25, na.rm = TRUE), 1),
@@ -287,7 +287,7 @@ summary_females <- data_females2 %>%
   select(share_beer, share_beer_home, share_vodka, share_samogon, share_wine, share_other) %>%
   pivot_longer(share_beer:share_other, names_to = "Variable", values_to = "Value") %>%
   group_by(Variable) %>%
-  summarize(Observations = sum(!is.na(Value)),
+  summarise(Observations = sum(!is.na(Value)),
             Mean = round(mean(Value, na.rm = TRUE), 1),
             SD = round(sd(Value, na.rm = TRUE), 1),
             p25 = round(quantile(Value, probs = 0.25, na.rm = TRUE), 1),
@@ -298,7 +298,7 @@ summary_females <- data_females2 %>%
   arrange(Variable)
 ```
 
-For a more polished output of the summary tables we will use the `kableExtra` package.
+For a more polished output of the summary tables, we will use the `kableExtra` package.
 
 ```{r eval=FALSE}
 # Run for additional info in the Viewer pane
@@ -345,7 +345,7 @@ summary_alcoholMales <- data_males_alc %>%
   select(age, birthy, rural, alcohol_intake, abstainer, inclmo_milk, univ_educ, health_evaluation, wtself, married) %>%
   pivot_longer(everything(), names_to = "Variable", values_to = "Value") %>%
   group_by(Variable) %>%
-  summarize(Observations = sum(!is.na(Value)),
+  summarise(Observations = sum(!is.na(Value)),
             Mean = round(mean(Value, na.rm = TRUE), 1),
             SD = round(sd(Value, na.rm = TRUE), 1),
             p25 = round(quantile(Value, probs = 0.25, na.rm = TRUE), 1),
@@ -365,7 +365,7 @@ summary_allMales <- males_all %>%
   select(age, birthy, rural, alcohol_intake, abstainer, inclmo_milk, univ_educ, health_evaluation, wtself, married) %>%
   pivot_longer(everything(), names_to = "Variable", values_to = "Value") %>%
   group_by(Variable) %>%
-  summarize(Observations = sum(!is.na(Value)),
+  summarise(Observations = sum(!is.na(Value)),
             Mean = round(mean(Value, na.rm = TRUE), 1),
             SD = round(sd(Value, na.rm = TRUE), 1),
             p25 = round(quantile(Value, probs = 0.25, na.rm = TRUE), 1),
@@ -400,9 +400,9 @@ In the next step, we want to examine the effects of the anti-alcohol campaign on
 
 Quiz: What impact do you think the ban had on alcohol sales?
 
-(1) The sales of alcohol in litres have remained similar despite the ban
-(2) The sales of alcohol in litres have risen
-(3) The sales of alcohol in litres have fallen sharply
+(1) The sales of alcohol in liters have remained similar despite the ban
+(2) The sales of alcohol in liters have risen
+(3) The sales of alcohol in liters have fallen sharply
 
 ```{r eval=FALSE}
 # Run line to answer the quiz above
@@ -455,7 +455,7 @@ We can already see the sharp drop in vodka sales. However, the graph is still no
 
 In addition to the line chart, let's add a point chart to make the data points more visible. We also want to add a grey area to mark the time period of the anti-alcohol campaign. And to make the whole plot look a little cleaner, we use `theme_bw()`.
 
-**Task:** Fill in the code in the chunk below to create the improved plot. Note that the grey box should be created before the lines and dots so it does not cover them.
+**Task:** Fill in the code in the chunk below to create the improved plot. Note that the grey box should be created before the lines and dots, so it does not cover them.
 
 ```{r "6_3"}
 ggplot(data_vodka) +
@@ -527,7 +527,7 @@ figure_beer <- ggplot(data_beer) +
         strip.text = element_text(colour = 'white')) +
   facet_grid(. ~ title)
 
-# Print plot: Vokda
+# Print plot: Vodka
 figure_vodka
 
 # Print plot: Beer
@@ -535,7 +535,7 @@ figure_beer
 
 ```
 
-We immediately see the drastic consequences of the anti-alcohol campaign. Sales of vodka and beer have fallen sharply. Vodka sales have fallen from 5.5 liters of pure alcohol per capita in 1984 to less than 2.5 liters per capita in 1987. Beer consumption fell from around 1.2 liters per capita in 1985 to around 0.9 liters per capita in 1987. Although the campaign officially ended in 1988 we see that sales have not returned to its former level in the following years.
+We immediately see the drastic consequences of the anti-alcohol campaign. Sales of vodka and beer have fallen sharply. Vodka sales have fallen from 5.5 liters of pure alcohol per capita in 1984 to less than 2.5 liters per capita in 1987. Beer consumption fell from around 1.2 liters per capita in 1985 to around 0.9 liters per capita in 1987. Although the campaign officially ended in 1988, we see that sales have not returned to its former level in the following years.
 
 **Quiz:**
 
@@ -575,7 +575,7 @@ data_samogon %>%
   scale_x_continuous(limits = c(1980, 1992), breaks = seq(1980, 1992, 2)) +
   geom_rect(aes(xmin = 1985, xmax = 1990, ymin = -Inf, ymax = Inf), fill = "lightgrey", alpha = 0.5) +
   geom_text(aes(x = 1987.5, y = 0.3, label = "anti-alcohol\ncampaign")) +
-  geom_line(aes(x = year, y = `Share of Samogon in Total Alcohol`, color = "illegal home-made\nvodka (samagon)")) +
+  geom_line(aes(x = year, y = `Share of Samogon in Total Alcohol`, color = "illegal home-made\nvodka (samogon)")) +
   geom_point(aes(x = year, y = `Share of Samogon in Total Alcohol`), color = "darkblue") +
   scale_y_continuous(name = "Share of home-made vodka (samogon) in total vodka",
                      breaks = seq(0, 0.65, 0.05), limits = c(0, 0.65),
@@ -622,9 +622,9 @@ Since we also want to see whether rural individuals are different from urban ind
 
 With DiD, we want to find out the difference whether the share of vodka among young people in rural areas who became adolescent during the campaign developed differently than among young people in rural areas who did not became adolescent during the campaign and their urban counterparts. 
 
-To better understand DiD, we will first calculate it manually, step by step. We'll start by looking at the mean shares of vokda of consumers who turned 17 during the campaign, and compare them to those who turned 17 outside the campaign. In the first step, we'll calculate the difference for rural consumers, followed by the same process for urban consumers. Subtracting these two results from each other gives us the DiD result.
+To better understand DiD, we will first calculate it manually, step by step. We'll start by looking at the mean shares of vodka of consumers who turned 17 during the campaign and compare them to those who turned 17 outside the campaign. In the first step, we'll calculate the difference for rural consumers, followed by the same process for urban consumers. Subtracting these two results from each other gives us the DiD result.
 
-First we need to import the data from the RLMS again (`base_sample_aej.dta`) and assign it to the variable `data`.
+First, we need to import the data from the RLMS again (`base_sample_aej.dta`) and assign it to the variable `data`.
 
 **Task:** Read the data from the file `base_sample_aej.dta` and assign it to the variable `data`.
 
@@ -826,8 +826,8 @@ ggplot() +
   facet_grid(. ~ title)
 ```
 
-We see that the trends in vodka consumption rates are very similar for rural and urban areas in the years prior to the campaign. There is a small deviation in 1981 which may be explained by other developments that we cannot see here on the basis of the averages.
-In the years of the anti-alcohol campaign (gray box), we see that adolences in rural areas have a more stable share of vodka, whereas in urban areas, this share collapses, indicating that the trends are different. 
+We see that the trends in vodka consumption rates are very similar for rural and urban areas in the years prior to the campaign. There is a small deviation in 1981 which may be explained by other developments that we cannot see here based on the averages.
+In the years of the anti-alcohol campaign (gray box), we see that adolescents in rural areas have a more stable share of vodka, whereas in urban areas, this share collapses, indicating that the trends are different. 
 
 These parallel trends before the time of the campaign are a good indicator that this key assumption of DiD holds.
 
@@ -938,7 +938,7 @@ In total, our DiD result means that people who were adolescent in a rural area d
 
 With a sample mean of the dependent variable share of vodka of 47.373%, a difference of 3.461 percentage points is slightly substantial.
 
-However, it is questionable whether this model without controls and fixed effects is sufficient with regard to possible weaknesses in the model assumptions. Therefore, we will now include further control variables and fixed effects in the regression model.
+However, it is questionable whether this model without controls and fixed effects is sufficient given possible weaknesses in the model assumptions. Therefore, we will now include further control variables and fixed effects in the regression model.
 
 ### Fixed effects
 
@@ -1020,9 +1020,9 @@ For a more accurate estimation, however, we need to make a further adjustment.
 
 #### Cluster robust standard errors
 
-The standard errors of the regression coefficients are important for hypothesis testing. They indicate the precision of the estimated coefficients. If the standard errors are too large, the estimated coefficients are less reliable. However default standard errors can greatly overstate precision if clustering is ignored. Cluster robust standard errors consider the correlation of the error terms within a cluster in order to prevent the standard errors from being underestimated.
+The standard errors of the regression coefficients are important for hypothesis testing. They indicate the precision of the estimated coefficients. If the standard errors are too large, the estimated coefficients are less reliable. However, default standard errors can greatly overstate precision if clustering is ignored. Cluster robust standard errors consider the correlation of the error terms within a cluster in order to prevent the standard errors from being underestimated.
 We cluster robust standard errors by individual, as individuals may respond differently to certain variables and clustering by a person identifier allows us to account for this heterogeneity.
-For a detailed description of cluster-robust standard errors that goes beyond this bachelors thesis, see Cameron & Miller (2015).
+For a detailed description of cluster-robust standard errors that goes beyond this bachelor's thesis, see Cameron & Miller (2015).
 <!-- Cameron, A. C., & Miller, D. L. (2015). A practitioner’s guide to cluster-robust inference. Journal of human resources, 50(2), 317-372. -->
 
 Let's run the same regression again, only this time with cluster robust standard errors for the variable `identificator`, which is a person identifier.
@@ -1047,9 +1047,9 @@ Compared to the previous regression, we see that the coefficients have remained 
 
 ## Exercise 4.3 -- Robustness checks and further specifications
 
-In the previous regression, we only included the variables `rural` and `gorbachev` as well as the interaction term `gorbachev` * `rural` with year, age and region fixed effects. However, it is likely that other factors also influence the share of vodka consumption. For example the alcohol intake, income, education, etc. could all affect the share of vodka consumption. Therefore, we will now include these and more additional control variables bit by bit in the regression.
+In the previous regression, we only included the variables `rural` and `gorbachev` as well as the interaction term `gorbachev` * `rural` with year, age and region fixed effects. However, it is likely that other factors also influence the share of vodka consumption. For example, the alcohol intake, income, education, etc. could all affect the share of vodka consumption. Therefore, we will now include these and more additional control variables bit by bit in the regression.
 
-First we need to load the cleaned data again and create our dummy variable `gorbachev`.
+First, we need to load the cleaned data again and create our dummy variable `gorbachev`.
 
 **Task:** The code is given. Just run the chunk below to load the cleaned data.
 
@@ -1093,7 +1093,7 @@ Now we can start with the regressions and output them at the very end using star
 
 - **reg3**: Next, we want to control for contemporaneous substitution patterns and differences in income elasticities. We add the variables `price_beer_to_vodka`, `logincome` and `logincome_missing`.
 
-- **reg4**: We add a further set of demographic control variables such as education, weight, subjective health status and martial status. We add `univ_educ`, `wtself`, `health_evaluation` and `married`. We also add our previously generated dummy `seventeen_before_1970`.
+- **reg4**: We add a further set of demographic control variables such as education, weight, subjective health status and marital status. We add `univ_educ`, `wtself`, `health_evaluation` and `married`. We also add our previously generated dummy `seventeen_before_1970`.
 
 **Task:** The code is given. Just run the chunk below to run the regressions.
 
@@ -1178,7 +1178,7 @@ As a further specification, we want to analyze the long-term effect in the amoun
 
 Therefore, we first look at the logarithmized alcohol intake. Before we insert the variable value as an explanatory variable, we are going to modify outliners, since the level of alcohol is highly skewed to the right. We are going to **winsorize** the extreme values.
 
-Winsorizing is a technique used to deal with outliers in a dataset to reduce their potentially distorting effect on analyses. Instead of removing the outliers, winsorizing adjusts the extreme values to a specified percentile value. For example, if we winsorize the data at the 95th percentile, any values above the 95th percentile are set to the value at the 95th percentile. To learn more see Duan (1998).
+Winsorizing is a technique used to deal with outliers in a dataset to reduce their potentially distorting effect on analyses. Instead of removing the outliers, winsorizing adjusts the extreme values to a specified percentile value. For example, if we winsorize the data at the 95th percentile, any values above the 95th percentile are set to the value at the 95th percentile. To learn more, see Duan (1998).
 <!-- Duan, B. (1998). The robustness of trimming and Winsorization when the population distribution is skewed (Doctoral dissertation, Tulane University) -->
 
 If we do not winsorize, we will not get significant results of our DiD coefficient. In our case, we winsorize at the 95th percentile to obtain a significant estimation result. However, for those who are interested, I show results without winsorization and with winsorization at the 99th percentile, both of which yield insignificant results in appendix A3
@@ -1232,7 +1232,7 @@ reg7 <- felm(share_beer ~ gorbachev * rural + gorbachev + rural + alcohol_intake
 ```
 
 
-Finally we add a new variable `share_hard` that contains the sum of the shares of vodka, samogon and fortified wine to the dataset and run the regression.
+Finally, we add a new variable `share_hard` that contains the sum of the shares of vodka, samogon and fortified wine to the dataset and run the regression.
 
 **Task:** The code is given. Just run the chunk below.
 
@@ -1285,7 +1285,7 @@ stargazer(reg5, reg6, reg7, reg8,
 ```
 <br>
 
-In (5), we can see that the anti-alcohol campaign significantly (at the 5% level) reduced total long-term alcohol consumption by 8.431 percentage points among urban consumers who became adolescents during the campaign compared to urban consumers who became adolescents before or after the campaign. The effect for rural adolescents, on the other hand, is reduced by 0.836 percentage points, probably due to better access to samagon. Overall, however, rural consumers who turned 17 during the campaign have a 7.594 percentage points higher alcohol consumption than urban consumers who turned 17.
+In (5), we can see that the anti-alcohol campaign significantly (at the 5% level) reduced total long-term alcohol consumption by 8.431 percentage points among urban consumers who became adolescents during the campaign compared to urban consumers who became adolescents before or after the campaign. The effect for rural adolescents, on the other hand, is reduced by 0.836 percentage points, probably due to better access to samogon. Overall, however, rural consumers who turned 17 during the campaign have a 7.594 percentage points higher alcohol consumption than urban consumers who turned 17.
 
 Next, in (6), we don’t see any significant long-run effect of the campaign on abstaining. The results indicate that individuals, both in rural and urban areas, who turned 17 during the campaign were more likely to abstain from alcohol compared to those who turned 17 before or after the campaign. However, the regression may be imprecise as we did not get a significant result. There are likely other factors why individuals abstain from alcohol that we have not included that could affect the results.
 
@@ -1303,7 +1303,7 @@ Finally, in (8) we see a similar effect on hard alcohol, that includes cognac, f
 
 In the 1990s, there was another major change in the Russian alcohol market. After the fall of the Soviet Union, many goods that were previously unavailable became available. This included high-quality beer, which was produced and sold in cans and plastic bottles thanks to new technologies (Kueng & Yakovlev 2021). 
 
-Using this large import shock, we want to examine whether the long-term taste for alcohol can change to light alcohol if one was an adolescent at the time. This could also have an impact on mortality when consumers switch from hard to light alcohol. However, we need to approach the analyses with caution, as many other factors played a role during the time when the borders were opened, and not all of these factors can be taken into account.
+Using this large import shock, we want to examine whether the long-term taste for alcohol can change to light alcohol if one was an adolescent at the time. This could also have an impact on mortality when consumers switch from hard to light alcohol. However, we need to approach the analyses with caution, as many other factors played a role during the time when the borders were opened, and not all of them can be taken into account.
 
 <!-- We use this large import shock for the external validity of our previous results. -->
 
@@ -1362,7 +1362,7 @@ $$
 
 where $S_{it}^{beer}$ is the share of beer in total alcohol consumption of individual $i$ in year $t$, $yearTurned17_i$ is the year in which individual $i$ turned 17, $x_{it}$ is a vector of control variables and $id_i$, $round_t$ and $age_{it}$ are fixed effects.
 
-The authors run this regression several times for an ever shrinking time span of the expansion and display the coefficients graphically. For simplification, we instead run the regression for the entire period in which the expansion took place. This simplified analysis leads to the same conclusion as the more complex variant. However, if you are interested, you can take a closer look at the authors research design and results, which I have replicated in appendix A4.
+The authors run this regression several times for an ever-shrinking time span of the expansion and display the coefficients graphically. For simplification, we instead run the regression for the entire period in which the expansion took place. This simplified analysis leads to the same conclusion as the more complex variant. However, if you are interested, you can take a closer look at the authors research design and results, which I have replicated in appendix A4.
 
 To start our regression, we again need our cleaned dataset from the RLMS and add the variable `yearTurned17`.
 
@@ -1384,7 +1384,7 @@ Since we only want to look at the years in which consumers turned 17, when the b
 ```
 
 
-Now we can run the regressions for this period. We regress on share of beer as the dependent variable and also on share of vodka for a direct comparison. We use the full set of control variables from our previous regressions and cluster the standard errors at the individual level.
+Now we can run the regressions for this period. We regress on share of beer as the dependent variable and on share of vodka for a direct comparison. We use the full set of control variables from our previous regressions and cluster the standard errors at the individual level.
 
 **Task:** The code is given. Just run the chunk below to run the regression.
 
@@ -1407,7 +1407,7 @@ The results indicate that consumers who became 17 years old during the expansion
 
 For this reason, we would now like to further narrow down our observed period of 12 years in which consumers live in a more similar environment. Therefore, let's look at the 4 years when consumers turned 17 in the middle of the expansion from 1999 to 2003. Then we run the same regressions and output the results.
 
-**Task:** The code is given. Just run the chunk below to run the regressions for the shrinked period.
+**Task:** The code is given. Just run the chunk below to run the regressions for the new period.
 
 ```{r "12_6",results='asis'}
 data_99_03 <- data %>%
@@ -1484,7 +1484,7 @@ data <- data_main %>%
          !(age < 18)) # drop minors to avoid reporting problem due to legal drinking age being 18
 ```
 
-Next, we run the regressions. To shrink the sample window, we use a loop that performs the regression for each 5-year time frame and then saves the coefficient and the standard errors in a dataframe `results_beer_plac`. We also calculate the 95% confidence intervals.
+Next, we run the regressions. To shrink the sample window, we use a loop that performs the regression for each 5-year time frame and then saves the coefficient and the standard errors in a data frame `results_beer_plac`. We also calculate the 95% confidence intervals.
 
 **Task:** The code is given. Just run the chunk below to run the regressions. Note that it may take a few seconds for the regressions to run in the background. 
 
@@ -1531,7 +1531,7 @@ results_beer_plac %>%
   geom_line(aes(y = drink_95up), linetype = "dashed") +
   geom_line(aes(y = drink_95down), linetype = "dashed") +
   geom_hline(yintercept = 0, color = "black") +
-  labs(y = "ϕ: Coefficient for Year-Turned-17", x = "Year in which individual turned 17") +
+  labs(y = expression(phi ~ ": Coefficient for Year-Turned-17"), x = "Year in which individual turned 17") +
   scale_color_manual(values = c("beer" = "darkblue"),
                      labels = c("beer" = "Share of beer")) +
   scale_shape_manual(values = c("beer" = 4),
@@ -1570,7 +1570,7 @@ The results of the placebo test are consistent with our previous findings and pr
 
 ## Exercise 6 -- Alcohol tastes and mortality
 
-Alcohol consumption is widely recognized as having a detrimental effect on life expectancy and overall health. According to the World Bank Group, the average male life expectancy at birth in Russia in 2022 was 68 years, while for females it was 78 years. Research by Leon et al. (2009) highlights that men in Russia consume significantly more alcohol than women, with conservative estimates indicating that 31-43% of deaths among working-age men are attributable to alcohol-related causes. Many of these effects are not the result of prolonged heavy drinking, but are caused by consuming large amounts of alcohol in a short period of time, commonly known as **binge drinking** (Kueng & Yakovlev, 2021). 
+Alcohol consumption is widely recognized as having a detrimental effect on life expectancy and overall health. According to the World Bank Group, the average male life expectancy at birth in Russia in 2022 was 68 years, while for females it was 78 years. Research by Leon et al. (2009) highlights that men in Russia consume significantly more alcohol than women, with conservative estimates indicating that 31-43% of deaths among working-age men are attributable to alcohol-related causes. Many of these effects are not the result of prolonged heavy drinking but are caused by consuming large amounts of alcohol in a short period of time, commonly known as **binge drinking** (Kueng & Yakovlev, 2021). 
 
 The authors also say that binge drinking is much less common with beer than with vodka, so a natural hypothesis is that people who prefer beer to vodka are less likely to die from alcohol-related causes. 
 
@@ -1707,7 +1707,7 @@ Now we can plot the standardized mortality rates for Russia and the US.
 **Task:** The code is given. Just run the chunk below to plot the standardized mortality rates.
 
 ```{r "15_7"}
-data_mort$title = "Male mortality, age 20−64"
+data_mort$title = "Male mortality, age 20-64"
 
 data_mort %>%
   ggplot(aes(x = year)) +
@@ -1729,7 +1729,7 @@ data_mort %>%
   facet_grid(. ~ title)
 ```
 
-In the plot, we see the standardized mortality ratio of Russian men in blue and the standardized mortality ratio of U.S. men in red. The gray area marks the anti-alcohol campaign and the blue area marks the expansion of the beer market in Russia. 
+In the plot, we see the standardized mortality ratio of Russian men in blue and the standardized mortality ratio of U.S. men in red. The gray area marks the anti-alcohol campaign, and the blue area marks the expansion of the beer market in Russia. 
 We see that during the anti-alcohol campaign the mortality rate fell a little, until it increased again after the campaign was over.
 
 It can also be seen that the mortality rate for working-age men is higher in Russia than in the US. The SMR for Russian men shows fluctuations, especially in the 1990s, while the SMR for US men remains relatively stable and tends to decrease.
@@ -1821,20 +1821,20 @@ Using the data read in earlier, we could now estimate a linear regression model 
 
 Instead, we could use instrumental variable (IV) estimation to solve this endogeneity problem. An IV is a variable that is correlated with the endogenous explanatory variable (in this case, share of vodka) but is uncorrelated with the error term and does not directly affect the dependent variable (death rates). The IV helps to isolate the variation in the endogenous explanatory variable that is not influenced by unobserved confounders, thus solving the endogeneity problem. The authors of the paper use the anti-alcohol campaign as an instrument to establish the causal effect of the share of vodka on male mortality. The authors found that an increase in the share of vodka leads to a significant increase in mortality.
 
-In this problem set, however, I will not go into this in detail. The regressions and results are available for interested readers in appendix A5. If you are interested, you can read more about instrumental variables in Chapter 19 of Huntington-Klein's "An Introduction to Research Design and Causality" (2021), and see the authors' explanation of their results in chapter VI of the paper.
+In this problem set, however, I will not go into this in detail. The regressions and results are available for interested readers in appendix A5. If you are interested, you can read more about instrumental variables in Chapter 19 of Huntington-Klein's "An Introduction to Research Design and Causality" (2021) and see the authors' explanation of their results in Chapter VI of the paper.
 
 
 ## Exercise 7 -- Conclusion
 
 The aim of this interactive problem was to find out whether a short-term policy of widespread alcohol prohibition could change people's taste for alcohol in the long term and whether it could have an impact on mortality. In the first chapter, we looked at the anti-alcohol campaign launched by Gorbachev in 1985, which aimed to curb widespread alcohol abuse in the Soviet Union through a series of restrictive measures. While the campaign temporarily reduced alcohol consumption, its limited focus on supply restriction without addressing the underlying causes of alcohol abuse led to its short-lived impact. The campaign was officially abandoned in 1988, and alcohol consumption began to rise again.
 
-In the next chapter, we took a closer look at the source of the data, in particular the Russian Longitudinal Monitoring Survey, which has been collecting socioeconomic data from over 4,000 households annually since 1992. We analyzed these data descriptively in Chapter 3, first examining the differences between men and women, noting that men tend to consume mainly vodka and beer, while women tend to consume more wine. Because men's substitution patterns are easier to study than women's, and because men's mortality from alcohol is significantly higher than women's, we focused on them in further analyses. We then examined the effects of the anti-alcohol campaign on alcohol consumption and saw that vodka and beer sales plummeted during this time. The campaign also led to an increase in illegal alcohol production, especially a type of moonshine called samogon. The production of samogon was more widespread in rural areas than in urban areas, which is why the main analysis focuses only on these, as we wanted to find out whether better access to hard alcohol might have made a difference in the long run.
+In the next chapter, we took a closer look at the source of the data, particularly the Russian Longitudinal Monitoring Survey, which has been collecting socioeconomic data from over 4,000 households annually since 1992. We analyzed these data descriptively in Chapter 3, first examining the differences between men and women, noting that men tend to consume mainly vodka and beer, while women tend to consume more wine. Because men's substitution patterns are easier to study than women's, and because men's mortality from alcohol is significantly higher than women's, we focused on them in further analyses. We then examined the effects of the anti-alcohol campaign on alcohol consumption and saw that vodka and beer sales plummeted during this time. The campaign also led to an increase in illegal alcohol production, especially a type of moonshine called samogon. The production of samogon was more widespread in rural areas than in urban areas, which is why the main analysis focuses only on these, as we wanted to find out whether better access to hard alcohol might have made a difference in the long run.
 
 Chapter four then focused on the long-run effects of the anti-alcohol campaign on tastes. We hypothesized that early regular alcohol consumption during adolescence would influence taste and examined differences between rural and urban consumers, as rural areas had easier access to samogon. In this context, we looked at the Difference-in-Difference approach and began by calculating it manually in order to find causal effects of the anti-alcohol campaign on long-term alcohol tastes. We found that people who were adolescents in a rural area during the campaign preferred vodka by an average of 3.461 percentage points more than their urban counterparts. Additionally, we confirmed the parallel trends assumption, showing that vodka consumption trends were consistent between rural and urban areas before the campaign. We then estimated the difference-in-difference approach using linear regression to see the standard errors and significance and to control for different variables. By adding fixed effects and control variables, and by clustering robust standard errors, we have progressively obtained more precise estimates. Our results showed significantly higher vodka consumption among rural adolescents who turned 17 during the campaign compared to their urban counterparts, based on data recorded over a decade after the campaign.
 
 In chapter five, we looked at another import shock, the expansion of the beer market after the fall of the Soviet Union, which increased access to beer many times over. We estimated a linear regression to examine the long-term effects of the beer market expansion on young consumers' alcohol preferences. The results showed that individuals who turned 17 during the expansion consume significantly more beer than those who turned 17 a year earlier. Additionally, we found a decrease in vodka consumption among these consumers, consistent with the anti-alcohol campaign's findings that increased beer consumption correlates with lower vodka consumption. We were then able to support these results with a placebo test.
 
-Finally, in the sixth chapter, we took a closer look at the mortality of working-age men in Russia. Using descriptive analysis, we found that mortality fell sharply during the period of the anti-alcohol campaign, but rose sharply after the campaign ended. We also found that the mortality rate is particularly correlated with the sale of vodka, as there are similar trends, whereas for the sale of beer this trend is not visible, which is consistent with the hypothesis that the effect of alcohol on mortality among working-age men is mainly due to binge drinking. The authors also found, using IV regression, that an increase in the share of vodka leads to a significant increase in mortality.
+Finally, in the sixth chapter, we took a closer look at the mortality of working-age men in Russia. Using descriptive analysis, we found that mortality fell sharply during the period of the anti-alcohol campaign but rose sharply after the campaign ended. We also found that the mortality rate is particularly correlated with the sale of vodka, as there are similar trends, whereas for the sale of beer this trend is not visible, which is consistent with the hypothesis that the effect of alcohol on mortality among working-age men is mainly due to binge drinking. The authors also found, using IV regression, that an increase in the share of vodka leads to a significant increase in mortality.
 
 In conclusion, the results of the analysis show that a short-term policy like the anti-alcohol campaign can have a long-term impact on alcohol tastes and mortality. The campaign led to a significant increase in vodka consumption among rural adolescents, which persisted over a decade after the campaign. Although the results may not have fulfilled the original plan of the campaign, it provides us with information for future interventions to reduce male mortality from alcohol in the long term through targeted taste changes.
 
@@ -2129,15 +2129,15 @@ data4 <- data3 %>%
 
 data5 <- data4 %>%
   group_by(year) %>%
-  summarize(bu = mean(bu, na.rm = TRUE),
-            samagon_share = mean(samogon_share, na.rm = TRUE),
-            samagon_share_rur = mean(samogon_share_rur, na.rm = TRUE),
+  summarise(bu = mean(bu, na.rm = TRUE),
+            samogon_share = mean(samogon_share, na.rm = TRUE),
+            samogon_share_rur = mean(samogon_share_rur, na.rm = TRUE),
             .groups = 'drop') %>%
   ungroup()
   
 data6 <- data5 %>%
   left_join(se_df, by = "year") %>%
-  mutate(br = samagon_share_rur - bu,
+  mutate(br = samogon_share_rur - bu,
          br_u = br + 1.96 * se_c,
          br_d = br - 1.96 * se_c)
 
@@ -2201,7 +2201,7 @@ data <- readRDS("RLMS_cleaned_data.rds")
 
 To identify the age, we use the same regression with all control variables, fixed effects and cluster robust standard errors for the variable `identificator` as in the main analysis. We perform this regression for ages between 10 and 35. 
 
-The authors of the paper describe their method as a related approach to the nonparametric estimation of an unknown density function. To smooth the estimate of this unknown age function a triangular weighted kernel was used for the variable `gorbachev`. This means that the kernel reflects the intensity of the campaign during the five-year period from 1986 to 1990.
+The authors of the paper describe their method as a related approach to the nonparametric estimation of an unknown density function. To smooth the estimate of this unknown age function, a triangular weighted kernel was used for the variable `gorbachev`. This means that the kernel reflects the intensity of the campaign during the five-year period from 1986 to 1990.
 
 We instead use a uniform weighted kernel for the variable `gorbachev` (The authors did the same in the online appendix for a robustness check). This means that we assign a value of 1/5 to our variable `gorbachev` if the individual was of the specified age during the anti-alcohol campaign and a value of 0 if he was not. 
 
@@ -2236,7 +2236,7 @@ kernel_data %>%
 ```
 
 
-For our analysis we need a loop that performs the described regression for each year from ages 10 - 35 and then saves the coefficient and the standard errors in a dataframe `results_age`.
+For our analysis we need a loop that performs the described regression for each year from ages 10 - 35 and then saves the coefficient and the standard errors in a data frame `results_age`.
 
 **Task:** The code is given. Just run the chunk below to run the loop.
 
@@ -2338,7 +2338,7 @@ stargazer(reg_none,
 ```
 <br>
 
-Our DiD coefficient (a) is 7.350, but is not significant if we do not winsorize. The coefficients of (b) are significant at the 5% level and (c) at the 1% level.
+Our DiD coefficient (a) is 7.350 but is not significant if we do not winsorize. The coefficients of (b) are significant at the 5% level and (c) at the 1% level.
 
 Next, we run the regression with winsorization at the 99th percentile. 
 
@@ -2485,7 +2485,7 @@ data <- data %>%
 ```
 
 
-Next we run the regressions. To shrink the sample window, we use a loop that performs the regression for each time frame and then saves the coefficient and the standard errors in a dataframe `results_beer`. For a comparison, we also run the regression for the share of vodka and save the results in `results_vodka`.
+Next we run the regressions. To shrink the sample window, we use a loop that performs the regression for each time frame and then saves the coefficient and the standard errors in a data frame `results_beer`. For a comparison, we also run the regression for the share of vodka and save the results in `results_vodka`.
 
 We control for the same variables as in our main regressions from the anti-alcohol campaign. We also cluster the standard errors at the individual level.
 
@@ -2550,7 +2550,7 @@ results_comb %>%
   geom_line(aes(y = drink_95up), linetype = "dashed") +
   geom_line(aes(y = drink_95down), linetype = "dashed") +
   geom_hline(yintercept = 0, color = "black") +
-  labs(y = "ϕ: Coefficient for Year-Turned-17", x = "Year in which individual turned 17") +
+  labs(y = expression(phi ~ ": Coefficient for Year-Turned-17"), x = "Year in which individual turned 17") +
   scale_color_manual(values = c("beer" = "darkblue", "vodka" = "darkred"),
                      labels = c("beer" = "Share of beer", "vodka" = "Share of vodka")) +
   scale_shape_manual(values = c("beer" = 4, "vodka" = 1),
