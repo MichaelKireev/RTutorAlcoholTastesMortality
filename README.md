@@ -12,6 +12,11 @@ The paper, online appendix, and data are available at the following websites:
 
 - **Data**: https://doi.org/10.3886/E117443V1
 
+
+The problem set is hosted online and can be edited under the following link: https://michaelkireev.shinyapps.io/RTutorAlcoholTastesMortality/
+Alternatively, you can edit the problem set locally and use the following instructions:
+
+
 ## 1. Installation
 
 RTutor and this package is hosted on Github. To install everything, run the following code in your R console.
